@@ -1,8 +1,8 @@
+#Become a Software Professional 2023
 ## Week 01
 Grupo 6 - Log in-Sing in / Nicolas Kler- Gonzalo Reybet 
-------------------------------------------------------------
-Custom password function in log in:
 
+Custom password function in log in:
 Super Admin: super
 Admin: admin
 Trainer: train
@@ -11,7 +11,7 @@ Wrong user: user
 
 (read note on screen 1 - Sign in Partner -)
 
--------------Screens----------------
+### Screens
 1 - Sign in Partner - 50%
 2 - Sign Up Partner - 90%
 3 - Welcome Page Partner- 100%
@@ -19,7 +19,8 @@ Wrong user: user
 5 - Change Password User- 100%
 6 - Acc Recovery in app User- 100%
 7 - Terms and conditions - 100%
--------------Others-----------------
+
+###Others
 *Functional login system 100%
 *Flow connection 50%
 *Error, confirmation and notification boxes 100%
@@ -33,7 +34,7 @@ Wrong user: user
 ## Week 02
 We create a semantic model in HTML5 of the landing page figma prototype, within this model we use:
 In general:
--------------Elements--------------
+###Elements
 *Images
 *Headers
 *Paragraphs
@@ -41,8 +42,8 @@ In general:
 *Icons
 *footer
 *lists
--------------Funtions--------------
-Added functions:
+
+###Funtions
 *Forms
 *Navigation bar
 *Types of memberships
