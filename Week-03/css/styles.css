@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', sans-serif, 'Gill Sans';
+}
+main {
+    margin-left: 19%;
+}
+header {
+    background-color: #373867;
+    margin-left: 19%;
+    padding: 40px 40px;
+}
+h1 {
+    font-size: 40px;
+    line-height: 46.88px;
+    font-weight: 700;
+    color: #AACE9B;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 8px;
+    right: 100px;
+
+}
+aside {
+    position: fixed;
+    background-color: #AACE9B;
+    top: 0;
+    left: 0;
+    width: 19%;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 0px 0px 0px;
+    gap: 10px;
+    top: 40px;
+    background-color: #373867;
+    border: 1px solid #1d1c1c;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+  .boton:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+ .rrimg {
+    position: absolute;
+}
+nav a {
+    margin: 10px;
+    display: inline-block;
+    padding: 20px 0px 0px 0px;
+    width: 200px;
+    height: 40px;
+    gap: 10px;
+    background-color: #ffffff;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #373867;
+    font-size: 20px;
+    font-weight: 600
+    
+    
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+  }
+  .secondary-menu-side-bar {
+    font-size: 15px;
+    font-weight: 600;
+    color: #373867;
+    line-height: 20px;
+    margin-left: 40px;
+    margin-top: 5px;
+    text-align: left;
+  }
+  .Other-options {
+    font-size: 20px;
+    font-weight: 600;
+    color: #373867;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+
+.main-reason {
+    position: relative;
+    padding: 0px 0px;
+    margin-left: 0%;
+    display: block;
+    text-align: left;
+    
+}
+
+.title-main-reason {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+    color: #373867;
+    right: 800px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #373867;
+    margin-left: 19%;
+    padding: 50px 50px;
+}
+
+.body-mecenas {
+    position: absolute;
+    padding: 50px 0px ;
+    width: 39%;
+    font-size: 20px;
+    color: #373867;
+    font-weight: 600;
+    line-height: 23.44px;
+    right: 670px;
+    top: 20px;
+    
+}
+
+.main-reason {
+    float: right;
+    width: 75%;
+    top: 80px;
+}
