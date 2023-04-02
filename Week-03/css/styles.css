@@ -3,26 +3,43 @@ body {
 }
 main {
     margin-left: 19%;
+    position: absolute;
+    width: 79%;
+    top: 135px;
+    right: 0px;
 }
 header {
     background-color: #373867;
     margin-left: 19%;
     padding: 40px 40px;
 }
+
+header img {
+    position: relative;
+    top: -7px;
+    left: 5px;
+  }
+
 h1 {
+    display: inline-block;
+    position: absolute;
     font-size: 40px;
     line-height: 46.88px;
     font-weight: 700;
     color: #AACE9B;
     text-align: center;
     text-transform: uppercase;
-    position: relative;
     bottom: 8px;
+    left: 519px;
+    top: 24px;
     right: 100px;
+    width: 485px;
+    height: 45px;
 
 }
 aside {
     position: fixed;
+    z-index: 1;
     background-color: #AACE9B;
     top: 0;
     left: 0;
@@ -32,20 +49,6 @@ aside {
     text-transform: uppercase;
 }
 
-.boton {
-    display: inline-block;
-    padding: 10px 0px 0px 0px;
-    gap: 10px;
-    top: 40px;
-    background-color: #373867;
-    border: 1px solid #1d1c1c;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: bold;
-}
 .boton:hover {
     background-color: #e0e0e0;
     border-color: #999;
@@ -68,10 +71,25 @@ nav a {
     font-weight: 600
 }
 
+.boton {
+    display: inline-block;
+    padding: 10px 0px 0px 0px;
+    gap: 10px;
+    top: 40px;
+    background-color: #373867;
+    border: 1px solid #1d1c1c;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 nav a:hover {
     background-color: #e0e0e0;
     border-color: #999;
-  }
+}
 
 .secondary-menu-side-bar {
     font-size: 15px;
@@ -81,17 +99,59 @@ nav a:hover {
     margin-left: 40px;
     margin-top: 5px;
     text-align: left;
-  }
+}
 
 .Other-options {
     font-size: 20px;
     font-weight: 600;
     color: #373867;
     line-height: 40px;
-    margin-left: 20px;
+    margin-left: -1px;
     margin-bottom: 0px;
     text-align: left;
   }
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+aside h2 {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #373867;
+}
+
+.other-opt-ul {
+    padding: 0 0 0 40px;
+    text-align: left;
+    margin-left: -38px;
+}
+
+.other-opt-ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #373867;
+}
+
+.social-links {
+    position: relative;
+    text-align: left;
+}
+
+.social-links li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #373867;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.social-links li a img {
+    position: relative;
+    top: 6px;
+}
 
 .main-reason {
     position: relative;
@@ -99,60 +159,48 @@ nav a:hover {
     margin-left: 0%;
     display: block;
     text-align: left;
-    
-}
-
-.title-main-reason {
-    position: relative;
-    text-align: left;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 35.16px;
-    color: #373867;
-    right: 400px;
-    top: 250px;
-    display: inline;
-    text-transform: uppercase;
-}
-
-footer {
-    background-color: #373867;
-    margin-left: 19%;
-    padding: 10px 10px;
-}
-
-.body-mecenas {
-    position: relative;
-    padding: 50px 0px ;
-    width: 55%;
-    font-size: 20px;
-    color: #373867;
-    font-weight: 600;
-    line-height: 23.44px;
-    right: 400px;
-    text-align: left;
-    top: 250px;
-}
-
-.main-reason {
-    position: relative;
     float: right;
     width: 700px;
     bottom: 200px;
     right: 0px;
+    
+}
+
+
+#main-reason div {
+    display: inline-block;
+    position: absolute;
+    width: 40%;
+}
+
+#main-reason div h2 {
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #373867;
+}
+
+#main-reason div p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #373867;
+}
+
+#main-reason img {
+    position: relative;
+    width: 60%;
+    left: 450px;
 }
 
 .separation {
-    position: relative;
-    background-color: #373867;
-    width: 80%;
+    margin: 0 40px;
     height: 5px;
-    text-align: center;
-    top: 750px;
-    left: 100px;
+    background-color: #373867;
+    margin-block: 30px
 }
 
-#how-can-we-help-you img {
-    position: relative ;
-    bottom: 300px;
+#how-can-we-help-you {
+    width: 1142px;
+    height: 903px;
+    text-align: center;
 }
