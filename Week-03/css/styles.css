@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', 'Gill Sans', sans-serif;
+    max-width: 100%;
 }
 header {
     position: absolute;
@@ -36,16 +37,14 @@ aside {
     text-align: center;
     background-color: #AACE9B;
 }
-a{
+a {
     text-decoration: none;
     color: inherit;
     background-color: transparent;
     border: none;
     outline: none;
 }
-
-
-.menu-nav li{
+.menu-nav li {
     position: relative;
     left: 13px;
     max-width: 150px;
@@ -65,28 +64,25 @@ a{
     line-height: 20px;
     margin: 20px;
     text-transform: uppercase;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out
 }
-
-.menu-nav li:nth-child(1){
+.menu-nav li:nth-child(1) {
     background-color: #373867;
     color: #ffffff;
 }
-
 .menu-nav li:hover {
-    background-color: rgb(116, 116, 116);
+    opacity: 0.7;
 }
-
 .menu-nav a {
   position: relative;
   top: 12px;
 }
-
 h2 {
     text-transform: uppercase;
     font-weight: 700;
     color: #373867;
 }
-
 aside h2 {
     margin-right: 20px;
     font-size: 25px;
@@ -120,7 +116,6 @@ aside h2 {
     position: relative;
     top: 6px;
 }
-
 main {
     position: relative;
     left: 20%;
@@ -187,6 +182,11 @@ section {
     background-color: #EBECF0;
     border-radius: 5px;
     border: 2px solid #373867;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out
+}
+.sub-titles li:hover {
+    opacity: 0.6;
 }
 .sub-titles li:nth-child(1) {
     margin-top: 200px;
@@ -212,7 +212,6 @@ section {
     text-transform: uppercase;
     color: #111343;
 }
-
 .title-section-contact {
     position: relative;
     height: 100px;
@@ -230,7 +229,7 @@ section {
     left: 200px;
     bottom: 62px;
 }
-.form-label{
+.form-label {
     display: block;
     margin-bottom: 20px;
     font-size: 30px;
@@ -242,7 +241,7 @@ section {
     position: relative;
     width: 300px;
     height: 45px;
-    margin-left: 147px;
+    margin-left: 233px;
     bottom: 50px;
     padding: 0 20px;
     border-radius: 25px;
@@ -252,8 +251,8 @@ section {
 }
 .options-form input {
     position: relative;
-    top: 12px;
-    width: 30px;
+    top: 11px;
+    width: 17px;
     height: 45px;
     margin-left: 20px;
     padding: 0 20px;
@@ -267,7 +266,7 @@ section {
     font-size: 30px;
     font-weight: 700;
     color: #373867;
-  }
+}
 .options-form {
     margin: 8px 0;
     font-size: 30px;
@@ -284,20 +283,20 @@ section {
 .all-form textarea {
     display: block;
     padding: 5px 15px;
-    border: 2px solid #E0E0E0;
     border-radius: 4px;
     font-size: 16px;
+    border: 2px solid #E0E0E0;
     color: #373867;
 }
 input[type=submit] {
     width: 178px;
     height: 47px;
     margin: 67px 50px 0 0;
-    background-color: #AACE9B;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     font-weight: 600;
+    background-color: #AACE9B;
     color: #373867;
 }
 input[type=reset] {
@@ -330,14 +329,14 @@ input[type=reset] {
 }
 #our-history p {
     position: relative;
-    top: 280px;
-    left: 145px;
-    width: 804px;
+    left: 142px;
+    top: 278px;
     font-weight: 700;
     font-size: 30px;
-    text-align: justify;
+    width: 804px;
     line-height: 35px;
     color: #FFFFFF;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 #activities {
     position: relative;
@@ -356,26 +355,45 @@ input[type=reset] {
     position: relative;
     font-size: 40px;
     font-weight: 700;
-    line-height: 40px;
-    color: #000000;
-    left: 500px;
+    line-height: 30px;
+    left: 600px;
     bottom: 870px;
+    color: #000000;
+}
+#membership img {
+    position: relative;
+    right: 80px;
+    bottom: 0px;
+}
+#membership h2 {
+    margin-top: 47px;
+    position: relative;
+    right: 50px;
+    color: #000000;
+    bottom: 48px;
+}
+#membership h3 {
+    margin-top: 70px;
+    position: relative;
+    font-size: 30px;
 }
 .small-list li {
+    position: relative;
     font-size: 20px;
+    bottom: 40px;
 }
 .block-4 {
     position: relative;
-    max-width: 1000px;
+    max-width: 500px;
     max-height: 1000px;
 }
 footer {
     position: relative;
     bottom: 0;
     width: 81%;
-    background-color: #373867;
     left: 19%;
     height: 135px;
+    background-color: #373867;
 }
 footer img {
     float: right;
