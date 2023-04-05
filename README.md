@@ -56,8 +56,10 @@ The figma landing page, corresponding to week 03's problem, was styled with the 
 *Navbar
 *Sidebar
 *Main
-*Sidebar
 *Footer
+*Images
+*Forms
+*links
 We also took into account the html avoiding the use of relative and abosolut positions.
 ## Authors
 - Gonzalo Reybet
