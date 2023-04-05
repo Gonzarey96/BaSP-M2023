@@ -6,13 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;
-		1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100
+		;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<title>Mega rocket S.A</title>
 	</head>
 	<body>
 		<header>
-			<img class="rrimg" src="img/radium-rocket-words.png" alt="radium rocket in words">
+			<img src="img/radium-rocket-words.png" alt="radium rocket in words">
 			<h1>Mega rocket S.A</h1>
 		</header>
 		<aside>
@@ -35,9 +35,11 @@
 					<li><a href="#activities">Activities</a></li>
 				</ul>
 				<ul class="social-links">
-					<li><a href="http://www.gmail.com"target="_blank"><img src="img/mail.png" alt=letter>info@Rocket.com</a></li>
-					<li><a href="http://bit.ly/3ZmeagI"target="_blank"><img src="img/home.png" alt=home>Rosario,Argentina.</li></a>
-					<li><a href="tel:000000000"target="_blank"><img src="img/wp.png"alt=phone>(000) 000-000</li></a>
+					<li><a href="http://www.gmail.com" target="_blank"><img src="img/mail.png" 
+						alt=letter>info@Rocket.com</a></li>
+					<li><a href="http://bit.ly/3ZmeagI" target="_blank"><img src="img/home.png" 
+						alt=home>Rosario,Argentina.</li></a>
+					<li><a href="tel:000000000" target="_blank"><img src="img/wp.png"alt=phone>(000) 000-000</li></a>
 				</ul>
 			</section>
 		</aside>
@@ -53,8 +55,8 @@
 						eleifend orci. Donec condimentum ex non leo volutpat pretium. Cras aliquet quam quis semper 
 						egestas. Sed at ultricies turpis. Aenean cursus porta eleifend.
 					</p>
+					<img src="img/main-reason-img.png" alt="man and woman with dumbbell">
 				</div>
-				<img class="first-picture" src="img/main-reason-img.png" alt="man and woman with dumbbell">
 			</section>
 			<div class="separation"></div>
 				<section id="how-can-we-help-you">
@@ -62,7 +64,7 @@
 					<h2>How can we help you?</h2>
 					<ul class="sub-titles">
 						<li><h3>Turn reservation</h3></li>
-						<li><h3>Membership</h3></li>
+						<li><h3>Membership managment</h3></li>
 						<li><h3>Agent display</h3></li>
 						<li><h3>Contact and suggest form</h3></li>
 					</ul>
@@ -70,31 +72,33 @@
 			<div class="separation"></div>
 			<section id="contact-form">
 				<div class="title-section-contact">
-					<h2 class="form-title">Contact</h2>
+					<h2>Contact</h2>
 					<img src="img/contact-icon.png" alt="an envelope">
 				</div>
 				<form class="all-form">
-					<label class="form-label" for="name">Name:</label>
-					<input type="text" id="name" placeholder="Insert your name" name="name" required>
-					<label class="form-label" for="surname">Surname:</label>
-					<input type="text" id="surname" placeholder="Insert your surname" name="surname" required>
-					<label class="form-label" for="email">E-mail:</label>
-					<input type="email" id="email" placeholder="Insert your e-mail" name="email" required>
+					<label class="form-label" for="name">Name:<input type="text" id="name" 
+					placeholder="Insert your name" name="name" required></label>
+					<label class="form-label" for="surname">Surname:<input type="text" 
+					id="surname" placeholder="Insert your surname" name="surname" required></label>
+					<label class="form-label" for="email">E-mail:<input type="email" id="email" 
+					placeholder="Insert your e-mail" name="email" required></label>
 					<h3>Rason for contact:</h3>
 					<div class="options-form">
-						<input type="radio" id="surname" name="reason-for-contact" value="query" required>
-						<label for="text">I want to make a query or suggestion.</label>
+						<input type="radio" id="query" name="reason-for-contact" value="query" required>
+						<label for="query">I want to make a query or suggestion.</label>
 					</div>
 					<div class="options-form">
-						<input type="radio" name="reason-for-contact" value="claim" required>
-						<label for="text" id="surname">I want to make a claim.</label>
+						<input type="radio" id="claim" name="reason-for-contact" value="claim" required>
+						<label for="claim" id="surname">I want to make a claim.</label>
 					</div>
 					<div class="options-form">
-						<input type="radio" name="reason-for-contact" value="membership" required>
-						<label for="text">I want to know the memberships and costs.</label>
+						<input type="radio" id="memberships" name="reason-for-contact" value="memberships" required>
+						<label for="memberships">I want to know the memberships and costs.</label>
 					</div>
 					<label class="message" for="message">Message:</label>
-					<textarea id="message" name="message" cols="105" rows="10" placeholder="Write here" required></textarea>
+					<textarea id="message" name="message" cols="105" rows="10" 
+					placeholder="Write here" required>
+					</textarea>
 					<input type="submit" value="Send message"></input>
 					<input type="reset" value="Reset"></input>
 				</form>
@@ -112,54 +116,54 @@
 					</p>
 			</section>
 			<div class="separation"></div>
-			<div class="block-4">
-				<section id="activities">
+			<section class="activities-memberships">
+				<article id="activities">
+					<h2>Activities</h2>
 					<ul>
-						<h2>Activities</h2>
 						<li><a href="#activities"><img src="img/crossfit-icon.png" alt="a dumbbell"></a></li>
-						<li class="sub-titles-activities"><h3>Crossfit</h3></li>
+						<li class="sub-titles-activities"><p>Crossfit</p></li>
 						<li><a href="#activities"><img src="img/fitness-icon.png" alt="muscular arm"></a></li>
-						<li class="sub-titles-activities"><h3>Fitness</h3></li>
+						<li class="sub-titles-activities"><p>Fitness</p></li>
 						<li><a href="#activities"><img src="img/spining-icon.png" alt="exercise bike"></a></li>
-						<li class="sub-titles-activities"><h3>Spnning</h3></li>
+						<li class="sub-titles-activities"><p>Spinning</p></li>
 						<li><a href="#activities"><img src="img/functional-icon.png" alt="gym machine"></a></li>
-						<li class="sub-titles-activities"><h3>Funtional training</h3></li>
+						<li class="sub-titles-activities"><p>Funtional</p></li>
 						<li><a href="#activities"><img src="img/boxing-icon.png" alt="boxing gloves"></a></li>
-						<li class="sub-titles-activities"><h3>Boxing</h3>
+						<li class="sub-titles-activities"><p>Boxing</p></li>
 					</ul>
-				</section>
-				<section id="membership">
+				</article>
+				<article id="membership">
+					<h2>Membership Types</h2>
 					<ul>
-						<h2>Membership Types</h2>
-						<li><h3>Black membership</h3></li>
-						<li><a href="#membership"><img src="img/black-membership-icon.png" alt="black shield"></a></li>
+						<li><img src="img/black-membership-icon.png" alt="black shield"></li>
+						<li>Black membership</li>
 						<ul class="small-list">
-							<li>-Free access to the wight room</li>
-							<li>-Free access to classes prior</li>
-							<li>-Personalized monitoring by coach</li>
-							<li>-Grid display</li>
+							<li>Free access to the weight room</li>
+							<li>Free access to classes prior</li>
+							<li>Personalized monitoring by coach</li>
+							<li>Grid display</li>
 						</ul>
-						<h3>Classic membership</h3>
-						<li><a href="#membership"><img src="img/classic-member.png" alt="black ray"></a></li>
+						<li><img src="img/classic-member.png" alt="black ray"></li>
+						<li>Classic membership</li>
 						<ul class="small-list">
-							<li>-Free access to the wight room</li>
-							<li>-Personalized monitoring by coach</li>
-							<li>-Grid display</li>
+							<li>Free access to the weight room</li>
+							<li>Personalized monitoring by coach</li>
+							<li>Grid display</li>
 						</ul>
-						<li><h3>Only classes membership</h3></li>
-						<li><a href="#membership"><img src="img/classes-membership.png" alt="black heart"></a></li>
+						<li><img src="img/classes-membership.png" alt="black heart"></li>
+						<li class="title-list-class">Only classes membership</li>
 						<ul class="small-list">
-							<li>-Free access to the wight room</li>
-							<li>-Grid display</li>
+							<li>Free access to the weight room</li>
+							<li>Grid display</li>
 						</ul>
 					</ul>
-				</section>
-			</div>
+				</article>
+			</section>
 		</main>
 		<footer>
-			<a href="https://web.whatsapp.com" target="_blank"><img src="img/gmail-icon.png" alt="white phone"></a>
-			<a href="https://www.facebook.com" target="_blank"><img src="img/facebook-icon.png" alt="white f"></a>
 			<a href="https://www.instagram.com/" target="_blank"><img src="img/insta-icon.png" alt="camera"></a>
+			<a href="https://www.facebook.com" target="_blank"><img src="img/facebook-icon.png" alt="white f"></a>
+			<a href="https://web.whatsapp.com" target="_blank"><img src="img/gmail-icon.png" alt="white phone"></a>
 			<small>&copy; 2022 Radium Rocket. All rights reserved.</small>
 		</footer>
 	</body>

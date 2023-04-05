@@ -47,3 +47,18 @@ Funtions
 ## Authors
 - Gonzalo Reybet
 ```
+
+## Week 03 🚀
+
+```
+The figma landing page, corresponding to week 03's problem, was styled with the following elements:
+*Header
+*Navbar
+*Sidebar
+*Main
+*Sidebar
+*Footer
+We also took into account the html avoiding the use of relative and abosolut positions.
+## Authors
+- Gonzalo Reybet
+```
