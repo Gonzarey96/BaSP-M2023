@@ -1,0 +1,8 @@
+body {
+    font-family: 'Roboto', 'Gill Sans', sans-serif;
+    max-width: 100%;
+    color: #373867;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}

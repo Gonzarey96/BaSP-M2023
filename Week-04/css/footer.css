@@ -1,0 +1,29 @@
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #373867;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.social-images {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #373867;
+    width: 67vw;
+    padding-right: 1rem;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: end;
+    color: black;
+}
+.social-images img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+small{
+    color: aliceblue;
+    background-color: #373867;
+    padding-left: 1rem;
+    font-size: 0.5rem;
+}
