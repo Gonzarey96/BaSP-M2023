@@ -1,7 +1,7 @@
 header {
     display: flex;
     background-color: #373867;
-    width: 100vw;
+    width: 100%;
     font-size: 1.5rem;
     text-transform: uppercase;
     align-items: center;
@@ -14,5 +14,17 @@ header .words-rr{
 }
 header h1 {
     color: #AACE9B;
-    margin:auto
+    margin:auto;
+}
+@media screen and (min-width: 480px) {
+    .burger-header {
+        display: none;
+    }
+    header .words-rr{
+        display: inline;
+        width: 30%;
+    }
+    header h1 {
+        margin: 20px;
+    }
 }

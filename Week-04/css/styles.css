@@ -1,8 +1,22 @@
 body {
     font-family: 'Roboto', 'Gill Sans', sans-serif;
-    max-width: 100%;
     color: #373867;
     display: flex;
-    flex-wrap: wrap;
     flex-grow: 1;
+    flex-direction: column;
+}
+
+.main-contain {
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .main-contain {
+        width: 80%;
+        
+    
+    }
+    body {
+        flex-direction: row;
+    }
 }
