@@ -7,8 +7,7 @@ header {
     align-items: center;
     padding-left: 3vw;
     padding-right: 3vw;
-    height: 8vh;
-    
+    height: 8vh;  
 }
 header .words-rr{
     display: none;
