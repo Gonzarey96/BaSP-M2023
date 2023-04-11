@@ -27,4 +27,10 @@ small{
     background-color: #373867;
     padding-left: 1rem;
     font-size: 0.5rem;
+    width: 100%;
+}
+@media screen and (min-width: 1024px) {
+    footer {
+        height: 9vh;
+    }
 }

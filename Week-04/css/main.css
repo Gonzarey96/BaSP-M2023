@@ -264,7 +264,7 @@ input[type=reset] {
 .membership-article {
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
@@ -272,10 +272,10 @@ input[type=reset] {
 }
 .article-membership-h2 {
     text-align: center;
-    margin: 3rem 0rem;
+    margin: 2rem 0rem;
     font-weight: 700;
     font-size: 2rem;
-    line-height: 10px;
+    line-height: 45px;
     color: #434470;
 }
 .activities-img {
@@ -291,7 +291,6 @@ input[type=reset] {
 .small-list {
     display: flex;
     flex-direction: column;
-    justify-content: end;
 }
 .small-list li {
     font-weight: 600;
@@ -317,14 +316,11 @@ input[type=reset] {
     justify-content: center;
     font-size: 1.5rem;
 }
-.activities-conteiner{
-    display: flex;
-    flex-direction: column;
-}
 .container-membership {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5rem;
 }
 .types-memberships-list {
     display: flex;
@@ -347,7 +343,7 @@ input[type=reset] {
     align-items: center;
     justify-content: center;
 }
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) {
     .activities-article {
         align-items: center;
         font-size: 1.4rem;
@@ -375,6 +371,11 @@ input[type=reset] {
         height: 11rem;
         width: 95%;
         max-width: 29rem;
+    }
+    .separation {
+        background-color: #373867;
+        height: 2px;
+        width: 80vw;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -415,8 +416,15 @@ input[type=reset] {
         margin-bottom: 10rem;
         width: 30%;
     }
+    .sub-titles li {
+        padding: 1.8rem 0; ;
+    }
     .form-label {
         width: 50%;
+    }
+    .title-image {
+        width: 80%;
+        justify-content: start;
     }
     .our-history {
         display: flex;
@@ -442,13 +450,35 @@ input[type=reset] {
         justify-content: space-around;
         width: 100%;
         height: 100%;
+        margin-bottom: 5rem;
+    }
+    .activities-article li {
+        justify-content: start;
     }
     .div-activities {
         width: 40%;
         height: 80%;
     }
+    .activities-img {
+        width: 5.5rem;
+    }
+    .article-membership-h2 {
+        color: #000000;
+    }
     .div-memberships {
         width: 40%;
         height: 80%;
+    }
+    .small-list {
+        width: 245px;
+    }
+    .separation {
+        background-color: #373867;
+        height: 5px;
+        width: 88%;
+        margin: 0 50px;
+        margin-block: 20px;
+        text-align: center;
+
     }
 }
