@@ -1,12 +1,12 @@
-aside{
+aside {
     display: none;
     flex-direction: column;
     position: sticky;
+    height: 100vh;
+    width: 100vw;
     top: 0;
     align-items: center;
     background-color: #FFFFFF;
-    height: 100vh;
-    width: 100vw;
     text-decoration: none; 
 }
 .elemento {
@@ -37,18 +37,23 @@ aside{
     width: 5rem;
     height: 1.5rem;
     background-color: #EBECF0;
-    padding: 1.5rem 2.9rem;
+    padding: 1.9rem 5rem;
     margin: 20px 0px;
     -webkit-text-stroke: 0.5px #AACE9B;
     font-weight: 400;
     text-transform: uppercase;
     border-radius: 5px;
+    border: 1px solid #373867;
 }
 .menu-nav li a {
     color: #373867;
+    width: 80px;
+    text-align: center;
 }
 .menu-nav li:first-child {
     background-color: #373867;
+    font-weight: 700;
+    font-size: 20px;
 }
 .menu-nav li:first-child a {
     color: #EBECF0;
@@ -80,10 +85,10 @@ aside{
     margin-top: 15px;
     margin-left: 10px;
 }
-.social-links li a{
+.social-links li a {
     color: #373867;
-    font-size: 10px;
-    font-weight: 700;
+    font-size: 8px;
+    font-weight: 700;   
 }
 .sidebar-images {
     width: 15px;
@@ -91,68 +96,82 @@ aside{
 }
 @media screen and (min-width: 480px) {
     aside {
-    display: flex;
-    width: 20%;
-    background-color: #AACE9B;
-    justify-content: space-around;
-    border-right: solid 1px #373867;
-}
+        display: flex;
+        width: 20%;
+        background-color: #AACE9B;
+        justify-content: space-around;
+        border-right: solid 1px #373867;
+    }
     .elemento {
-    display: inline;
-}
-.sidebar-images {
-    width: 1.2rem;
-    margin-left: 0.2rem;
-}
-.rr-logo {
-    order: -1;
-    border: 1px solid #AACE9B;
-}
-.burger-menu {
-    display: none;
-}
-.menu-nav li {
-    display: flex;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    padding: 0.7rem 2.6rem;
-    height: 2.3rem;
-    -webkit-text-stroke: 0.1px #e0e0e0;
-}
-.menu-nav li a {
-    width: 3.6rem;
-}
-.menu-nav li:first-child a {
-    width: 2.7rem;
-}
-.menu-nav li:last-child {
-    display: flex;
-}
-.other-options {
-    display: inline;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-}
-.other-opt-ul {
-    display: inline;
-    font-size: 0.7rem;
-}
-.social-nav-img {
-    display: none;
-}
-.title-side-mobile {
-    display: none;
-}
-}
-@media screen and (min-width: 1024px){
-    .menu-nav li{
+        display: inline;
+    }
+    .sidebar-images {
+        width: 1.2rem;
+        margin-left: 0.2rem;
+    }
+    .rr-logo img {
+        width: 80px;
+    }
+    .rr-logo {
+        order: -1;
+        border: 1px solid #AACE9B;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .menu-nav li {
+        display: flex;
         font-size: 15px;
-        padding: 0.9rem 4rem;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        padding: 1rem 2.8rem;
+        height: 2.3rem;
+        margin: 1.8rem 0;
+        -webkit-text-stroke: 0.1px #e0e0e0;
+    }
+    .menu-nav li a {
+        width: 4.6rem;
+        text-align: center;
+    }
+    .menu-nav li:first-child a {
+        width: 5.5rem;
+    }
+    .menu-nav li:last-child {
+        display: flex;
     }
     .other-options {
-        font-size: 17px;
+        display: inline;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .other-opt-ul {
+        display: inline;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    .social-nav-img {
+        display: none;
+    }
+    .title-side-mobile {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    aside {
+        border-right: solid 1px #AACE9B;
+    }
+    .menu-nav li{
+        font-size: 15px;
+        padding: 1.5rem 5rem;
+        margin: 2.2rem 0;
+    }
+    .social-links li a{
+        font-size: 16px;
+    }
+    .other-options {
+        font-size: 21px;
         line-height: 2rem;
     }
     .other-opt-ul {

@@ -25,7 +25,7 @@ Wrong user: user
 6 - Acc Recovery in app User- 100%
 7 - Terms and conditions - 100%
 ```
-## Week 02 🔧
+## Week 02 🔧 Link: https://gonzarey96.github.io/BaSP-M2023/Week-02/
 
 ```
 We create a semantic model in HTML5 of the landing page figma prototype, within this model we use:
@@ -48,7 +48,7 @@ Funtions
 - Gonzalo Reybet
 ```
 
-## Week 03 🚀
+## Week 03 🚀 Link: https://gonzarey96.github.io/BaSP-M2023/Week-03/
 
 ```
 The figma landing page, corresponding to week 03's problem, was styled with the following elements:
@@ -64,3 +64,9 @@ We also took into account the html avoiding the use of relative and abosolut pos
 ## Authors
 - Gonzalo Reybet
 ```
+
+## Week 04 Link: https://gonzarey96.github.io/BaSP-M2023/Week-04/
+
+```
+Responsive design of the landing page of the week 03 using flexbox:
+To display the mobile sidebar change the display none to flex.🔧

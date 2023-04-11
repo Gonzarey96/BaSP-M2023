@@ -10,27 +10,35 @@ footer{
 .social-images {
     display: flex;
     flex-direction: row-reverse;
-    background-color: #373867;
     width: 67vw;
     padding-right: 1rem;
     text-transform: uppercase;
     align-items: center;
     justify-content: end;
+    background-color: #373867;
     color: black;
 }
 .social-images img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    margin-left: 1rem;
 }
 small{
-    color: aliceblue;
+    color: rgb(18, 18, 18);
     background-color: #373867;
     padding-left: 1rem;
     font-size: 0.5rem;
     width: 100%;
 }
+@media screen and (min-width: 480px) {
+    small {
+        font-size: 0.7rem;
+    }
+}
 @media screen and (min-width: 1024px) {
     footer {
         height: 9vh;
+    }
+    small {
+        font-size: 1rem;
     }
 }

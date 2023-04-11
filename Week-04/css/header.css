@@ -1,13 +1,12 @@
 header {
     display: flex;
-    background-color: #373867;
     width: 100%;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    padding: 0 3vw;
     align-items: center;
-    padding-left: 3vw;
-    padding-right: 3vw;
     height: 8vh;  
+    background-color: #373867;
+    text-transform: uppercase;
+    font-size: 1.5rem;
 }
 header .words-rr{
     display: none;

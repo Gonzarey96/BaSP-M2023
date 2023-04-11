@@ -5,6 +5,9 @@ body {
     flex-grow: 1;
     flex-direction: column;
 }
+a {
+    color: #373867;
+}
 
 .main-contain {
     width: 100%;
