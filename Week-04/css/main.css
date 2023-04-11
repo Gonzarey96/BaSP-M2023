@@ -26,8 +26,7 @@
     margin-right: 2rem;
     font-size: 1rem;
     margin-bottom: 10rem;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);    
 }
 .how-can-we-help-you {
     display: flex;
@@ -35,7 +34,7 @@
     background-image: url(../img/how-can-we-help-you-img.png);
     background-repeat: no-repeat;
     background-position: center top;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
     height: 100vh;
 }
@@ -57,7 +56,7 @@
     align-items: center;
     width: 13rem;
     margin: auto;
-    margin-top: 4rem;
+    margin-top: 3rem;
     height: 3rem;
     border-radius: 0.5rem;
     border: 2px solid #373867;
@@ -273,7 +272,7 @@ input[type=reset] {
 }
 .article-membership-h2 {
     text-align: center;
-    margin: 5rem 0rem;
+    margin: 3rem 0rem;
     font-weight: 700;
     font-size: 2rem;
     line-height: 10px;
@@ -293,13 +292,18 @@ input[type=reset] {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: center;
 }
 .small-list li {
     font-weight: 600;
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1.4rem;
     list-style-type: "-";
+}
+.small-list li:first-child {
+    font-size: 1.5rem;
+    list-style: none;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
 }
 .title-list-class {
     display: flex;
@@ -317,12 +321,134 @@ input[type=reset] {
     display: flex;
     flex-direction: column;
 }
-@media screen and (min-width: 480px){
-.sub-titles li {
+.container-membership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.types-memberships-list {
+    display: flex;
+    
+}
+.conteiner-img-classes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-img-classes img {
+    padding-right: 3rem;
+    margin-left: 1.3rem;
+}
+.conteiner-img-classes-heart {
+    width: 80px;
+    text-align: end;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 480px){
+    .activities-article {
+        align-items: center;
+        font-size: 1.4rem;
+    }
+    .activities-article li {
+        justify-content: center;
+    }
+    .container-membership {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .types-memberships-list {
+        display: flex;    
+    }
+    .conteiner-img-classes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tablet-resolution-activities{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 11rem;
+        width: 95%;
+        max-width: 29rem;
+    }
 }
 @media screen and (min-width: 1024px) {
-    .sub-titles {
+    .conteiner-section-1 {
+        display: flex;
         flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+    .conteiner-section-1 img {
+        order: 2;
+        width: 50%;
+    }
+    .sub-titles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 19vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteiner-section-1 .title-main-reason {
+        width: 100%;
+        text-align: initial;
+        margin-left: 5%;
+    }
+    .body-mecenas {
+        order: 1;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        font-weight: 400;
+        margin-top: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        font-size: 1rem;
+        margin-bottom: 10rem;
+        width: 30%;
+    }
+    .form-label {
+        width: 50%;
+    }
+    .our-history {
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        margin-left: 2rem;
+    }
+    .our-history p {
+        padding: 8rem 10.7rem;
+        font-size: 1.5rem;
+        line-height: 2.0rem;
+    }
+    .tablet-resolution-activities {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 95%;
+        max-width: 29rem;
+    }
+    .activities-conteiner {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+    }
+    .div-activities {
+        width: 40%;
+        height: 80%;
+    }
+    .div-memberships {
+        width: 40%;
+        height: 80%;
     }
 }
