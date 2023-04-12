@@ -187,15 +187,6 @@ input[type=reset] {
     flex-direction: column;
     align-items: center;
 }
-.our-history-img {
-    display: flex;
-    flex-direction: column;
-    background-image: url(../img/our-history-img.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    padding: 20rem 0rem;
-    background-size: cover;
-}
 .our-history img {
     display: none;
 }
@@ -314,8 +305,10 @@ input[type=reset] {
     align-items: center;
 }
 .conteiner-img-classes img {
-    padding-right: 3rem;
-    margin-left: 1.3rem;
+    padding-right: 2rem;
+}
+.small-list {
+    width: 245px;
 }
 @media screen and (min-width: 480px) {
     .body-mecenas {
@@ -342,17 +335,15 @@ input[type=reset] {
     .types-memberships-list {
         display: flex;    
     }
-    .conteiner-img-classes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .tablet-resolution-activities{
         display: flex;
         flex-flow: column wrap;
         height: 11rem;
         width: 95%;
         max-width: 29rem;
+    }
+    .small-list {
+        width: 245px;
     }
     .separation {
         background-color: #373867;
@@ -371,19 +362,6 @@ input[type=reset] {
         order: 2;
         width: 50%;
     }
-    .sub-titles {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        max-width: 37rem;
-        width: 57%;
-        align-items: center;
-    }
-    .conteiner-section-1 .title-main-reason {
-        width: 100%;
-        text-align: initial;
-        margin-left: 5%;
-    }
     .body-mecenas {
         order: 1;
         display: flex;
@@ -394,6 +372,22 @@ input[type=reset] {
         font-size: 1rem;
         width: 30%;
     }
+    .conteiner-section-1 .title-main-reason {
+        width: 100%;
+        text-align: initial;
+        margin-left: 5%;
+    }
+    .how-can-we-help-you {
+        margin: 0rem 1rem 0rem 2.5rem;
+    }
+    .sub-titles {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        max-width: 37rem;
+        width: 57%;
+        align-items: center;
+    }
     .false-buttom-contain {
         display: flex;
         justify-content: center;
@@ -401,14 +395,21 @@ input[type=reset] {
     .form-label {
         width: 50%;
     }
-    .our-history-img {
+    .our-history p {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        margin: 0rem;
+        height: 100vh;
+        padding: 8rem 2.7rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        font-size: 1.25rem;
+        color: #E0E0E0;
+        background-size: cover;
         background-image: url(../img/our-history-img.png);
         background-repeat: no-repeat;
         background-position: center top;
-        padding: 20rem 0rem;
-        background-size: cover;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     }
     .title-image {
         width: 80%;
@@ -424,6 +425,7 @@ input[type=reset] {
         padding: 8rem 10.7rem;
         font-size: 1.5rem;
         line-height: 2.0rem;
+        margin: 0rem 3rem 0rem 0rem;
     }
     .tablet-resolution-activities {
         flex-direction: column;
@@ -456,9 +458,6 @@ input[type=reset] {
     .div-memberships {
         width: 40%;
         height: 80%;
-    }
-    .small-list {
-        width: 245px;
     }
     .separation {
         background-color: #373867;
