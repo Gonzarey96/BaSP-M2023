@@ -1,5 +1,5 @@
 aside {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: sticky;
     height: 100vh;
@@ -161,19 +161,31 @@ aside {
     aside {
         border-right: solid 1px #AACE9B;
     }
-    .menu-nav li{
-        font-size: 15px;
-        padding: 1.5rem 5.5rem;
-        margin: 1.2rem 0;
+    .menu-nav li {
+        font-size: 19px;
+        padding: 2rem 6.2rem;
+        margin: 2.7rem 0;
+        line-height: 2rem;
     }
-    .social-links li a{
-        font-size: 16px;
+    .social-links li a {
+        font-size: 23px;
+        line-height: 2rem;
     }
     .other-options {
         font-size: 21px;
-        line-height: 2rem;
+        line-height: 4rem;
+        margin-top: 2rem;
+        text-align: center;
     }
     .other-opt-ul {
-        font-size: 15px;
+        font-size: 23px;
+        line-height: 2rem;
+        margin-top: 2rem;
+    }
+    .secondary-menu-side-bar{
+        height: 12rem;
+    }
+    .sidebar-images {
+        width: 2rem;
     }
 }
