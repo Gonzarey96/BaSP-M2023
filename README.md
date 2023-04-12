@@ -70,3 +70,4 @@ We also took into account the html avoiding the use of relative and abosolut pos
 ```
 Responsive design of the landing page of the week 03 using flexbox:
 To display the mobile sidebar change the display none to flex.🔧
+```

@@ -99,7 +99,6 @@ aside {
         display: flex;
         width: 20%;
         background-color: #AACE9B;
-        justify-content: space-around;
         border-right: solid 1px #373867;
     }
     .elemento {

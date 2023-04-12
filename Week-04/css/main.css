@@ -375,7 +375,8 @@ input[type=reset] {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        margin: 0 19vw;
+        max-width: 37rem;
+        width: 57%;
         align-items: center;
     }
     .conteiner-section-1 .title-main-reason {
@@ -393,11 +394,21 @@ input[type=reset] {
         font-size: 1rem;
         width: 30%;
     }
-    .sub-titles li {
-        padding: 1.8rem 0;
+    .false-buttom-contain {
+        display: flex;
+        justify-content: center;
     }
     .form-label {
         width: 50%;
+    }
+    .our-history-img {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../img/our-history-img.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding: 20rem 0rem;
+        background-size: cover;
     }
     .title-image {
         width: 80%;
