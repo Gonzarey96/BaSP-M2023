@@ -3,12 +3,12 @@ header {
     width: 100%;
     padding: 0 3vw;
     align-items: center;
-    height: 8vh;  
+    min-height: 3rem;  
     background-color: #373867;
     text-transform: uppercase;
     font-size: 1.5rem;
 }
-header .words-rr{
+header .words-rr {
     display: none;
 }
 header h1 {
@@ -19,16 +19,17 @@ header h1 {
     .burger-header {
         display: none;
     }
-    header .words-rr{
+    header .words-rr {
         display: inline;
-        width: 30%;
+        width: clamp(92px, 14vw, 161px);
     }
     header h1 {
-        margin: 20px;
+        margin: 0 1rem;
+        font-size: clamp(10px, 2vw, 24px);;
     }
 }
 @media screen and (min-width: 1024px) {
     header {
-        height: 11vh;
+        min-height: 4rem;
     }
 }

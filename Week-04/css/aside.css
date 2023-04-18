@@ -1,5 +1,5 @@
 aside {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: sticky;
     height: 100vh;
@@ -8,9 +8,7 @@ aside {
     align-items: center;
     background-color: #FFFFFF;
     text-decoration: none; 
-}
-.elemento {
-    display: none;
+    justify-content: space-evenly;
 }
 .sidebar-images {
     width: 1.2rem;
@@ -21,12 +19,12 @@ aside {
     margin-top: 20px;
 }
 .rr-logo img {
-    width: 65px;
+    width: 9vh;
 }
 .burger-menu {
     align-self: baseline;
     width: 2rem;
-    margin: 2.5rem 0 0 2rem;
+    margin: 0rem 0 0 2rem;
 }
 .menu-nav li {
     display: flex;
@@ -35,10 +33,10 @@ aside {
     justify-content: center;
     align-items: center;
     width: 5rem;
-    height: 1.5rem;
+    max-height: 1.5rem;
     background-color: #EBECF0;
-    padding: 1.9rem 5rem;
-    margin: 20px 0px;
+    padding: 1.8rem 5rem;
+    margin: 2rem 0px;
     -webkit-text-stroke: 0.5px #AACE9B;
     font-weight: 400;
     text-transform: uppercase;
@@ -70,7 +68,7 @@ aside {
 .title-side-mobile {
     order: 1;
     color:#34646F;
-    font-size: 15px;
+    font-size: 2.3vh;
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: 700;
@@ -81,17 +79,17 @@ aside {
     margin-right: 20px;
 }
 .social-nav-img img {
-    width: 30px;
+    width: 2rem;
     margin-top: 15px;
     margin-left: 10px;
 }
 .social-links li a {
     color: #373867;
-    font-size: 8px;
+    font-size: clamp(8.5px, 1.5vw, 24px);
     font-weight: 700;   
 }
 .sidebar-images {
-    width: 15px;
+    width: 1rem;
     margin-right: 5px;
 }
 @media screen and (min-width: 480px) {
@@ -100,16 +98,14 @@ aside {
         width: 20%;
         background-color: #AACE9B;
         border-right: solid 1px #373867;
-    }
-    .elemento {
-        display: inline;
+        justify-content: initial;
     }
     .sidebar-images {
-        width: 1.2rem;
+        width: clamp(12px, 2vw, 24px);;
         margin-left: 0.2rem;
     }
     .rr-logo img {
-        width: 80px;
+        width: 60px;
     }
     .rr-logo {
         order: -1;
@@ -124,13 +120,12 @@ aside {
         justify-content: center;
         align-items: center;
         width: 5rem;
-        padding: 1rem 2.8rem;
-        height: 2.3rem;
-        margin: 1.8rem 0;
+        padding: 1.3rem 2.8rem;
+        max-height: 2.3rem;
         -webkit-text-stroke: 0.1px #e0e0e0;
+        margin: 1.7rem 0;
     }
     .menu-nav li a {
-        width: 4.6rem;
         text-align: center;
     }
     .menu-nav li:first-child a {
@@ -141,14 +136,29 @@ aside {
     }
     .other-options {
         display: inline;
-        font-size: 0.7rem;
+        font-size: clamp(12px, 2vw, 24px);
         text-transform: uppercase;
         font-weight: 700;
+        line-height: clamp(30px, 2vh, 60px);
+    }
+    .secondary-menu-sidebar {
+        margin-bottom: clamp(12px, 1.6vh, 24px);
+    }
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: clamp(12px, 1.6vh, 24px);
+        min-height: 5rem;
     }
     .other-opt-ul {
         display: inline;
-        font-size: 0.7rem;
+        font-size: clamp(12px, 1.6vw, 24px);
         font-weight: 600;
+        line-height: clamp(16px, 1.6vh, 24px);
+    }
+    .social-links li a {
+        line-height: clamp(12px, 1.6vh, 24px);
     }
     .social-nav-img {
         display: none;
@@ -160,32 +170,35 @@ aside {
 @media screen and (min-width: 1024px) {
     aside {
         border-right: solid 1px #AACE9B;
+        justify-content: initial;
     }
+    .rr-logo img {
+        width: clamp(80px, 2.5vw, 280px);
+    } 
     .menu-nav li {
         font-size: 19px;
-        padding: 2rem 6.2rem;
-        margin: 2.7rem 0;
-        line-height: 2rem;
+        padding: 1.8rem 6.2rem;
+        line-height: clamp(12px, 4vh, 70px);
+        margin-bottom: 0.5rem;
+    }
+    .social-links {
+        margin-top: 0;
     }
     .social-links li a {
-        font-size: 23px;
-        line-height: 2rem;
-    }
-    .other-options {
-        font-size: 21px;
-        line-height: 4rem;
-        margin-top: 2rem;
-        text-align: center;
-    }
-    .other-opt-ul {
-        font-size: 23px;
-        line-height: 2rem;
-        margin-top: 2rem;
-    }
-    .secondary-menu-side-bar{
-        height: 12rem;
+        line-height: clamp(12px, 3.5vh, 70px);
+        font-size: clamp(17px, 1vw, 17px);
     }
     .sidebar-images {
-        width: 2rem;
+        width: clamp(12px, 1.5vw, 18px);
+    }
+    .other-options {
+        font-size: clamp(12px, 2vw, 17px);
+        text-align: center;
+        line-height: clamp(12px, 3.5vh, 70px);
+    }
+    .other-opt-ul {
+        font-size: clamp(12px, 1.7vw, 17px);;
+        margin-top: 2rem;
+        line-height: clamp(12px, 3.5vh, 70px);
     }
 }
