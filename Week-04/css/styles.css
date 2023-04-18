@@ -8,11 +8,16 @@ body {
 a {
     color: #373867;
 }
-
+small {
+    color: rgb(18, 18, 18);
+    background-color: #373867;
+    padding-left: 1rem;
+    font-size: 0.5rem;
+    width: 100%;
+}
 .main-contain {
     width: 100%;
 }
-
 @media screen and (min-width: 480px) {
     .main-contain {
         width: 80%;

@@ -69,5 +69,27 @@ We also took into account the html avoiding the use of relative and abosolut pos
 
 ```
 Responsive design of the landing page of the week 03 using flexbox:
-To display the mobile sidebar change the display none to flex.🔧
+To display the mobile sidebar change the "display none" to "display:flex".🔧
 ```
+## Week 05 Link: https://gonzarey96.github.io/BaSP-M2023/Week-05/
+
+```
+ES5 javascript exercises:
+1)Variables and Operators
+2)Strings (a,b,c,c,d,e
+3)Arrays
+4)If Else
+5)For
+6)Functions
+```
+```
+Corrections of the problem week 04: "Responsive".
+*problems with elements in sidebars.
+*fixed height measurements.
+*Removed "ghost" classes, spaces and ident.
+*Added "clamp" to give font size ranges and spacing in the sidebar.
+*Adjusted measurements to make everything look correct.
+
+```
+## Authors
+- Gonzalo Reybet
