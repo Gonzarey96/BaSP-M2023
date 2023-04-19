@@ -29,7 +29,7 @@ Al final mostrar una única alerta con la cadena completa. */
 
 console.log("-Exercise 5.c:");
 
-var bucle = ["francoD","computer","radium","rocket","mauro"];
+var bucle = ["cat","computer","radium","rocket","mauro"];
 var sentence = "";
 
 for(var i = 0; i < bucle.length; i++){
