@@ -9,7 +9,7 @@ body {
 }
 .side-background {
     display: none;
-    background-image: url(/assets/imgs/men-with-dumbell.png);
+    background-image: url(../../assets/imgs/men-with-dumbell.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
