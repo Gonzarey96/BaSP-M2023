@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/aside.css">
 		<link rel="stylesheet" type="text/css" href="../css/main.css">
 		<link rel="stylesheet" type="text/css" href="../css/footer.css">
+		<script src="../../Week-06/js/bonus.js"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100
 		;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<title>Mega rocket S.A</title>
@@ -90,35 +91,40 @@
 						<img src="../../assets/imgs/contact-icon.png" alt="an envelope">
 					</div>
 					<form class="all-form">
-						<label class="form-label" for="name">Name:<input type="text" id="name" 
-						placeholder="Insert your name" name="name" required></label>
-						<label class="form-label" for="surname">Surname:<input type="text" 
-						id="surname" placeholder="Insert your surname" name="surname" required></label>
-						<label class="form-label" for="email">E-mail:<input type="email" id="email" 
-						placeholder="Insert your e-mail" name="email" required></label>
+						<label class="form-label" for="name">Name:
+						  <input type="text" id="name" placeholder="Insert your name" name="name">
+						  <span class="error-message" id="name-error"></span>
+						</label>
+						<label class="form-label" for="surname">Surname:
+						  <input type="text" id="surname" placeholder="Insert your surname" name="surname">
+						  <span class="error-message" id="surname-error"></span>
+						</label>
+						<label class="form-label" for="email">E-mail:
+						  <input type="email" id="email" placeholder="Insert your e-mail" name="email">
+						  <span class="error-message" id="email-error"></span>
+						</label>
 						<h3>Rason for contact:</h3>
 						<div class="options-form">
-							<input type="radio" id="query" name="reason-for-contact" value="query" required>
-							<label for="query">I want to make a query or suggestion.</label>
+						  <input type="radio" id="query" name="reason-for-contact" value="query">
+						  <label for="query">I want to make a query or suggestion.</label>
 						</div>
 						<div class="options-form">
-							<input type="radio" id="claim" name="reason-for-contact" value="claim" required>
-							<label for="claim" id="surname">I want to make a claim.</label>
+						  <input type="radio" id="claim" name="reason-for-contact" value="claim">
+						  <label for="claim">I want to make a claim.</label>
 						</div>
 						<div class="options-form">
-							<input type="radio" id="memberships" name="reason-for-contact" value="memberships"required>
-							<label for="memberships">I want to know the memberships and costs.</label>
+						  <input type="radio" id="memberships" name="reason-for-contact" value="memberships">
+						  <label for="memberships">I want to know the memberships and costs.</label>
 						</div>
 						<div class="text-area">
-							<label class="message" for="message">Message:</label>
-							<textarea id="message" name="message" cols="105" rows="10" 
-							placeholder="Write here" required></textarea>
+						  <label class="message" for="message">Message:</label>
+						  <textarea id="message" name="message" cols="105" rows="10" placeholder="Write here" ></textarea>
 						</div>
 						<div class="send-submit">
-							<input type="submit" value="Send message"></input>
-							<input type="reset" value="Reset"></input>
+						  <input type="submit" value="Send message"></input>
+						  <input type="reset" value="Reset"></input>
 						</div>
-					</form>
+					  </form>
 				</section>
 				<div class="separation"></div>
 				<section id="our-history" class="our-history">
