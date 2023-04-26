@@ -93,3 +93,25 @@ Corrections of the problem week 04: "Responsive".
 ```
 ## Authors
 - Gonzalo Reybet
+## Week 06 Link: https://gonzarey96.github.io/BaSP-M2023/Week-06/views/index.html
+```
+Create a form with:
+ES5 "Vanilla" JavaScript.
+Without regular expressions.
+Validating 11 fields:
+All fields are required.
+
+First name
+Last name
+DNI
+Date of Birth
+Telephone
+Address
+City
+Zip/Postal Code
+Email
+Password
+Repeat Password
+```
+## Authors
+- Gonzalo Reybet
