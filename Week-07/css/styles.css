@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', 'Gill Sans', sans-serif;
+    color: #373867;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+a {
+    color: #373867;
+}
+small {
+    color: rgb(18, 18, 18);
+    background-color: #373867;
+    padding-left: 1rem;
+    font-size: 0.5rem;
+    width: 100%;
+}
+.main-contain {
+    width: 100%;
+}
+.submit-buttom-contain {
+    margin-top: 1rem;
+    text-align: center;
+}
+.is-hidden {
+    display: none;
+}
+.sumbit-login-button {
+    background-color: #AACE9B;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+.link-to-landing {
+    display: flex;
+    width: 100%;
+}
+.margins-arrow-1024px {
+    align-self: start;
+    margin: 0 0 0 1rem;
+}
+.form-login input {
+    border-radius: 5px;
+    padding: 3px;
+}
+
+@media screen and (min-width: 480px) {
+    .main-contain {
+        width: 80%;
+        
+    
+    }
+    body {
+        flex-direction: row;
+    }
+}
