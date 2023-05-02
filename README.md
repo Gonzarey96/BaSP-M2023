@@ -44,8 +44,7 @@ Funtions
 *Forms
 *Navigation bar
 *Types of memberships
-## Authors
-- Gonzalo Reybet
+
 ```
 
 ## Week 03 🚀 Link: https://gonzarey96.github.io/BaSP-M2023/Week-03/
@@ -61,8 +60,7 @@ The figma landing page, corresponding to week 03's problem, was styled with the 
 *Forms
 *links
 We also took into account the html avoiding the use of relative and abosolut positions.
-## Authors
-- Gonzalo Reybet
+
 ```
 
 ## Week 04 Link: https://gonzarey96.github.io/BaSP-M2023/Week-04/
@@ -91,8 +89,6 @@ Corrections of the problem week 04: "Responsive".
 *Adjusted measurements to make everything look correct.
 
 ```
-## Authors
-- Gonzalo Reybet
 ## Week 06 Link: https://gonzarey96.github.io/BaSP-M2023/Week-06/views/index.html
 ```
 Create a form with:
@@ -112,6 +108,20 @@ Zip/Postal Code
 Email
 Password
 Repeat Password
+```
+```
+## Week 07 Link: https://gonzarey96.github.io/BaSP-M2023/Week-07/views/index.html
+```
+We made a fetch promise linked to an API url to verify that the fields are valid.
+Once the data has been validated in the case of the registration form, it is stored in a localstorage where it should remain until it is deleted by the user.
+In the login you had to verify using a specific email and password:
+
+email: rose@radiumrocket.com
+password: BaSProfessional1
+
+API links:
+Login: https://api-rest-server.vercel.app/login
+Signup: https://api-rest-server.vercel.app/signup
 ```
 ## Authors
 - Gonzalo Reybet
