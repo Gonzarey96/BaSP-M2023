@@ -4,8 +4,8 @@ window.onload = function(){
     var passwordInput = document.getElementById('password');
     
     function validateEmail(email) {
-      var re = /\S+@\S+\.\S+/;
-      return re.test(email);
+      var emailRegex = /\S+@\S+\.\S+/;
+      return emailRegex.test(email);
     }
     function validatePassword(password) {
       var hasUpperCase = false;
@@ -90,18 +90,18 @@ window.onload = function(){
             })
             .then(function (data) {
               if(!data.success){
-                throw new Error("Unsuccessful login" + data.msg);
+                throw new Error('Unsuccessful login' + data.msg);
               }
-              alert("The request was successful:\n" + data.msg);
-              alert("Email: " + usernameInput.value + "\nPassword: " + passwordInput.value);
+              alert('The request was successful:\n' + data.msg);
+              alert('Email: ' + usernameInput.value + '\nPassword: ' + passwordInput.value);
             })
             .catch(function (err) {
-              alert("The request could not be performed successfully:\n" + err);
+              alert('The request could not be performed successfully:\n' + err);
             });
       } else {
         var usernameErrorMessage = usernameInput.parentElement.querySelector('.error-message');
         var passwordErrorMessage = passwordInput.parentElement.querySelector('.error-message');
-        var errorMessage = 'Por favor corrija los siguientes errores:\n\n';
+        var errorMessage = 'Please correct the following mistakes:\n\n';
         if (usernameErrorMessage) {
           errorMessage += '- ' + usernameErrorMessage.innerText + '\n';
         }
