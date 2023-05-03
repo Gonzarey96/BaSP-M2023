@@ -1,35 +1,35 @@
 header {
-    display: flex;
-    width: 100%;
-    padding: 0 3vw;
-    align-items: center;
-    min-height: 3rem;  
-    background-color: #373867;
-    text-transform: uppercase;
-    font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  padding: 0 3vw;
+  align-items: center;
+  min-height: 3rem;
+  background-color: #373867;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 header .words-rr {
-    display: none;
+  display: none;
 }
 header h1 {
-    color: #AACE9B;
-    margin:auto;
+  color: #aace9b;
+  margin: auto;
 }
 @media screen and (min-width: 480px) {
-    .burger-header {
-        display: none;
-    }
-    header .words-rr {
-        display: inline;
-        width: clamp(92px, 14vw, 161px);
-    }
-    header h1 {
-        margin: 0 1rem;
-        font-size: clamp(10px, 2vw, 24px);;
-    }
+  .burger-header {
+    display: none;
+  }
+  header .words-rr {
+    display: inline;
+    width: clamp(92px, 14vw, 161px);
+  }
+  header h1 {
+    margin: 0 1rem;
+    font-size: clamp(10px, 2vw, 24px);
+  }
 }
 @media screen and (min-width: 1024px) {
-    header {
-        min-height: 4rem;
-    }
+  header {
+    min-height: 4rem;
+  }
 }

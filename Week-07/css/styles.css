@@ -1,86 +1,84 @@
 body {
-    font-family: 'Roboto', 'Gill Sans', sans-serif;
-    color: #373867;
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
+  font-family: "Roboto", "Gill Sans", sans-serif;
+  color: #373867;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
 }
 a {
-    color: #373867;
+  color: #373867;
 }
 small {
-    color: rgb(18, 18, 18);
-    background-color: #373867;
-    padding-left: 1rem;
-    font-size: 0.5rem;
-    width: 100%;
+  color: rgb(18, 18, 18);
+  background-color: #373867;
+  padding-left: 1rem;
+  font-size: 0.5rem;
+  width: 100%;
 }
 .main-contain {
-    width: 100%;
+  width: 100%;
 }
 .submit-buttom-contain {
-    margin-top: 1rem;
-    text-align: center;
+  margin-top: 1rem;
+  text-align: center;
 }
 .is-hidden {
-    display: none;
+  display: none;
 }
 .sumbit-login-button {
-    background-color: #AACE9B;
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    margin-top: 2rem;
+  background-color: #aace9b;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin-top: 2rem;
 }
 .link-to-landing {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 .margins-arrow-1024px {
-    align-self: start;
-    margin: 0 0 0 1rem;
+  align-self: start;
+  margin: 0 0 0 1rem;
 }
 .form-login input {
-    border-radius: 5px;
-    padding: 3px;
+  border-radius: 5px;
+  padding: 3px;
 }
 .modal-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: pre-line;
-  }
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: pre-line;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (min-width: 480px) {
-    .main-contain {
-        width: 80%;
-        
-    
-    }
-    body {
-        flex-direction: row;
-    }
+  .main-contain {
+    width: 80%;
+  }
+  body {
+    flex-direction: row;
+  }
 }

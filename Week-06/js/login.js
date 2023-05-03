@@ -80,8 +80,18 @@ window.onload = function(){
       event.preventDefault();
       if (validateInputs()) {
         alert('Valid Form\n\nEmail: ' + usernameInput.value + '\nContraseña: ' + passwordInput.value);
+
       } else {
-        alert('Mail or Password invalid');
+        var usernameErrorMessage = usernameInput.parentElement.querySelector('.error-message');
+        var passwordErrorMessage = passwordInput.parentElement.querySelector('.error-message');
+        var errorMessage = 'Por favor corrija los siguientes errores:\n\n';
+        if (usernameErrorMessage) {
+          errorMessage += '- ' + usernameErrorMessage.innerText + '\n';
+        }
+        if (passwordErrorMessage) {
+          errorMessage += '- ' + passwordErrorMessage.innerText + '\n';
+        }
+        alert(errorMessage);
       }
     });
     }
