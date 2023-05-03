@@ -138,7 +138,3 @@ window.onload = function(){
     }
     });
     }
-    showModal('The request was successful:\n' + data.msg);
-    showModal('Email: ' + usernameInput.value + '\nPassword: ' + passwordInput.value);
-    showModal('The request could not be performed successfully:\n' + err);
-    showModal(errorMessage);

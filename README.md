@@ -113,7 +113,8 @@ Repeat Password
 ## Week 07 Link: https://gonzarey96.github.io/BaSP-M2023/Week-07/views/index.html
 ```
 We made a fetch promise linked to an API url to verify that the fields are valid.
-Once the data has been validated in the case of the registration form, it is stored in a localstorage where it should remain until it is deleted by the user.
+Once the data has been validated in the case of the registration form,
+ it is stored in a localstorage where it should remain until it is deleted by the user.
 In the login you had to verify using a specific email and password:
 
 email: rose@radiumrocket.com
