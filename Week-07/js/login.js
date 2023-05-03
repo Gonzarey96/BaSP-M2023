@@ -78,20 +78,10 @@ window.onload = function(){
     });
     function showModal(message) {
       var modal = document.createElement('div');
-      modal.style.position = 'fixed';
-      modal.style.top = '0';
-      modal.style.left = '0';
-      modal.style.width = '100%';
-      modal.style.height = '100%';
-      modal.style.backgroundColor = 'rgba(0,0,0,0.5)';
-      modal.style.display = 'flex';
-      modal.style.justifyContent = 'center';
-      modal.style.alignItems = 'center';
-
+      modal.classList.add('modal');
+    
       var content = document.createElement('div');
-      content.style.backgroundColor = '#fff';
-      content.style.padding = '20px';
-      content.style.borderRadius = '5px';
+      content.classList.add('modal-content');
       content.textContent = message;
       modal.appendChild(content);
     

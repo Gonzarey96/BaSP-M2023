@@ -306,23 +306,10 @@ var validateForm = function(form) {
 
 function showModal(message) {
   var modalContainer = document.createElement('div');
-  modalContainer.style.position = 'fixed';
-  modalContainer.style.top = '0';
-  modalContainer.style.left = '0';
-  modalContainer.style.width = '100%';
-  modalContainer.style.height = '100%';
-  modalContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+  modalContainer.classList.add('modal-container');
   
   var modalContent = document.createElement('div');
-  modalContent.style.backgroundColor = '#fff';
-  modalContent.style.padding = '20px';
-  modalContent.style.borderRadius = '5px';
-  modalContent.style.position = 'absolute';
-  modalContent.style.top = '50%';
-  modalContent.style.left = '50%';
-  modalContent.style.transform = 'translate(-50%, -50%)';
-  modalContent.style.whiteSpace = 'pre-line'
-
+  modalContent.classList.add('modal-content');
 
   var messageElement = document.createElement('p');
   messageElement.textContent = message;
