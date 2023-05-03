@@ -108,7 +108,7 @@ Zip/Postal Code
 Email
 Password
 Repeat Password
-```
+
 ```
 ## Week 07 Link: https://gonzarey96.github.io/BaSP-M2023/Week-07/views/index.html
 ```
