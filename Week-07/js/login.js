@@ -76,40 +76,69 @@ window.onload = function(){
     passwordInput.addEventListener('focus', function() {
       clearError(passwordInput);
     });
-    loginForm.addEventListener('submit', function(event) {
-      event.preventDefault();
-      if (validateInputs()) {
-          var emailValue = usernameInput.value;
-          var passwordValue = passwordInput.value;
-      
-          var url = `https://api-rest-server.vercel.app/login?email=${emailValue}&password=${passwordValue}`;
-      
-          fetch(url)
-            .then(function (resp){
-              return resp.json();
-            })
-            .then(function (data) {
-              if(!data.success){
-                throw new Error('Unsuccessful login' + data.msg);
-              }
-              alert('The request was successful:\n' + data.msg);
-              alert('Email: ' + usernameInput.value + '\nPassword: ' + passwordInput.value);
-            })
-            .catch(function (err) {
-              alert('The request could not be performed successfully:\n' + err);
-            });
-      } else {
-        var usernameErrorMessage = usernameInput.parentElement.querySelector('.error-message');
-        var passwordErrorMessage = passwordInput.parentElement.querySelector('.error-message');
-        var errorMessage = 'Please correct the following mistakes:\n\n';
-        if (usernameErrorMessage) {
-          errorMessage += '- ' + usernameErrorMessage.innerText + '\n';
-        }
-        if (passwordErrorMessage) {
-          errorMessage += '- ' + passwordErrorMessage.innerText + '\n';
-        }
-        alert(errorMessage);
-      }
-    });
+    function showModal(message) {
+      var modal = document.createElement('div');
+      modal.style.position = 'fixed';
+      modal.style.top = '0';
+      modal.style.left = '0';
+      modal.style.width = '100%';
+      modal.style.height = '100%';
+      modal.style.backgroundColor = 'rgba(0,0,0,0.5)';
+      modal.style.display = 'flex';
+      modal.style.justifyContent = 'center';
+      modal.style.alignItems = 'center';
+
+      var content = document.createElement('div');
+      content.style.backgroundColor = '#fff';
+      content.style.padding = '20px';
+      content.style.borderRadius = '5px';
+      content.textContent = message;
+      modal.appendChild(content);
+    
+      modal.addEventListener('click', function() {
+        document.body.removeChild(modal);
+      });
+    
+      document.body.appendChild(modal);
     }
     
+    loginForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    if (validateInputs()) {
+    var emailValue = usernameInput.value;
+    var passwordValue = passwordInput.value;
+    
+    var url = `https://api-rest-server.vercel.app/login?email=${emailValue}&password=${passwordValue}`;
+    
+    fetch(url)
+    .then(function (resp){
+    return resp.json();
+    })
+    .then(function (data) {
+    if(!data.success){
+    throw new Error('Unsuccessful login' + data.msg);
+    }
+    showModal('The request was successful:\n' + data.msg);
+    showModal('Email: ' + usernameInput.value + '\nPassword: ' + passwordInput.value);
+    })
+    .catch(function (err) {
+    showModal('The request could not be performed successfully:\n' + err);
+    });
+    } else {
+    var usernameErrorMessage = usernameInput.parentElement.querySelector('.error-message');
+    var passwordErrorMessage = passwordInput.parentElement.querySelector('.error-message');
+    var errorMessage = 'Please correct the following errors:\n\n';
+    if (usernameErrorMessage) {
+    errorMessage += '- ' + usernameErrorMessage.innerText + '\n';
+    }
+    if (passwordErrorMessage) {
+    errorMessage += '- ' + passwordErrorMessage.innerText + '\n';
+    }
+    showModal(errorMessage);
+    }
+    });
+    }
+    showModal('The request was successful:\n' + data.msg);
+    showModal('Email: ' + usernameInput.value + '\nPassword: ' + passwordInput.value);
+    showModal('The request could not be performed successfully:\n' + err);
+    showModal(errorMessage);

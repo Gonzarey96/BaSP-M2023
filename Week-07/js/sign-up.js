@@ -303,80 +303,116 @@ var validateForm = function(form) {
     dateArray= month + '/' + day + '/' + year;
     return dateArray;
 }
-  formElement.addEventListener('submit', function(e) {
-    var fieldErrors = [];
-    var message = '';
-    e.preventDefault();
-    var allForms = Array.from(formElement.querySelectorAll('.form-group'));
-    for (var i = 0; i < allForms.length; i++) {
-      var error = validateFormGroup(allForms[i]);
-      if(!error) {
-        fieldErrors.push(allForms[i].querySelector('.form-input').getAttribute('id'));
-      }
-    }
-    if(fieldErrors.length !== 0) {
-      inputsValidations.forEach(function(input) {
-        for (var i = 0; i < fieldErrors.length; i++) {
-          if(input.inputForm === fieldErrors[i]) {
-            message += input.errorMessage + '\n';
-          }
-        }
-      })
-      alert('Errors in: \n' + message);
-    } else {
-      for (var i = 0; i < allForms.length; i++) {
-        var input = allForms[i].querySelector('.form-input').value;
-        var label = allForms[i].querySelector('.form-label').textContent;
-        message += label.trim() + ': ' + input + '\n';
-      }
-      var nameValue = document.querySelector('#name').value;
-      var lastNameValue = document.querySelector('#lastname').value;
-      var dniValue = document.querySelector('#dni').value;
-      var dateBornValue = document.querySelector('#date-born').value;
-      var telValue = document.querySelector('#tel').value;
-      var directionValue = document.querySelector('#direction').value;
-      var cityValue = document.querySelector('#city').value;
-      var postalCodeValue = document.querySelector('#postal-code').value;
-      var emailValue = document.querySelector('#email').value;
-      var passwordValue = document.querySelector('#password').value;
-      var repeatedPasswordValue = document.querySelector('#repeated-password').value;
-    
-      var url = 'https://api-rest-server.vercel.app/signup';
-      url += '?name=' + nameValue;
-      url += '&lastName=' + lastNameValue;
-      url += '&dni=' + dniValue;
-      url += '&dob=' + changeDateFormat(dateBornValue);
-      url += '&phone=' + telValue;
-      url += '&address=' + directionValue;
-      url += '&city=' + cityValue;
-      url += '&zip=' + postalCodeValue;
-      url += '&email=' + emailValue;
-      url += '&password=' + passwordValue;
-      url += '&confirmPassword=' + repeatedPasswordValue;
-    
-      fetch(url)
-        .then(function(response) {
-          return response.json();
-        })
-        .then(function(data) {
-          alert('The request was successful:\n' + JSON.stringify(data));
-          localStorage.setItem('name', nameValue);
-          localStorage.setItem('lastName', lastNameValue);
-          localStorage.setItem('dni', dniValue);
-          localStorage.setItem('dateBorn', dateBornValue);
-          localStorage.setItem('tel', telValue);
-          localStorage.setItem('direction', directionValue);
-          localStorage.setItem('city', cityValue);
-          localStorage.setItem('postalCode', postalCodeValue);
-          localStorage.setItem('email', emailValue);
-          localStorage.setItem('password', passwordValue);
-        })
-        .catch(function(error) {
-          alert('Error:\n' + error);
-        });
-      alert('Congrats: \n' + message);
+
+function showModal(message) {
+  var modalContainer = document.createElement('div');
+  modalContainer.style.position = 'fixed';
+  modalContainer.style.top = '0';
+  modalContainer.style.left = '0';
+  modalContainer.style.width = '100%';
+  modalContainer.style.height = '100%';
+  modalContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+  
+  var modalContent = document.createElement('div');
+  modalContent.style.backgroundColor = '#fff';
+  modalContent.style.padding = '20px';
+  modalContent.style.borderRadius = '5px';
+  modalContent.style.position = 'absolute';
+  modalContent.style.top = '50%';
+  modalContent.style.left = '50%';
+  modalContent.style.transform = 'translate(-50%, -50%)';
+  modalContent.style.whiteSpace = 'pre-line'
+
+
+  var messageElement = document.createElement('p');
+  messageElement.textContent = message;
+  modalContent.appendChild(messageElement);
+
+  modalContainer.appendChild(modalContent);
+
+  modalContainer.addEventListener('click', function(e) {
+    if (e.target === modalContainer) {
+      document.body.removeChild(modalContainer);
     }
   });
+
+  document.body.appendChild(modalContainer);
+}
+
+formElement.addEventListener('submit', function(e) {
+var fieldErrors = [];
+var message = '';
+e.preventDefault();
+var allForms = Array.from(formElement.querySelectorAll('.form-group'));
+for (var i = 0; i < allForms.length; i++) {
+var error = validateFormGroup(allForms[i]);
+if(!error) {
+fieldErrors.push(allForms[i].querySelector('.form-input').getAttribute('id'));
+}
+}
+if(fieldErrors.length !== 0) {
+inputsValidations.forEach(function(input) {
+for (var i = 0; i < fieldErrors.length; i++) {
+if(input.inputForm === fieldErrors[i]) {
+message += input.errorMessage + '\n';
+}
+}
+})
+showModal('Errors in: \n' + message);
+} else {
+for (var i = 0; i < allForms.length; i++) {
+var input = allForms[i].querySelector('.form-input').value;
+var label = allForms[i].querySelector('.form-label').textContent;
+message += label.trim() + ': ' + input + '\n';
+}
+var nameValue = document.querySelector('#name').value;
+var lastNameValue = document.querySelector('#lastname').value;
+var dniValue = document.querySelector('#dni').value;
+var dateBornValue = document.querySelector('#date-born').value;
+var telValue = document.querySelector('#tel').value;
+var directionValue = document.querySelector('#direction').value;
+var cityValue = document.querySelector('#city').value;
+var postalCodeValue = document.querySelector('#postal-code').value;
+var emailValue = document.querySelector('#email').value;
+var passwordValue = document.querySelector('#password').value;
+var repeatedPasswordValue = document.querySelector('#repeated-password').value;
+
+var url = 'https://api-rest-server.vercel.app/signup';
+url += '?name=' + nameValue;
+url += '&lastName=' + lastNameValue;
+url += '&dni=' + dniValue;
+url += '&dob=' + changeDateFormat(dateBornValue);
+url += '&phone=' + telValue;
+url += '&address=' + directionValue;
+url += '&city=' + cityValue;
+url += '&zip=' + postalCodeValue;
+url += '&email=' + emailValue;
+url += '&password=' + passwordValue;
+url += '&confirmPassword=' + repeatedPasswordValue;
+
+fetch(url)
+.then(function(response) {
+return response.json();
+})
+.then(function(data) {
+showModal('The request was successful:\n' + JSON.stringify(data));
+localStorage.setItem('name', nameValue);
+localStorage.setItem('lastName', lastNameValue);
+localStorage.setItem('dni', dniValue);
+localStorage.setItem('dateBorn', dateBornValue);
+localStorage.setItem('tel', telValue);
+localStorage.setItem('direction', directionValue);
+localStorage.setItem('city', cityValue);
+localStorage.setItem('postalCode', postalCodeValue);
+localStorage.setItem('email', emailValue);
+localStorage.setItem('password', passwordValue);
+})
+.catch(function(error) {
+showModal('Error:\n' + error);
+});
+showModal('Congrats: \n' + message);
+}
+});
 }
 
 validateForm('#sign-up-form');
